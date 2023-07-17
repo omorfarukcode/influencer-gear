@@ -1,8 +1,476 @@
 /* Google Font Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800;900&display=swap');
-*{
+
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+}
+
+/* Common Style  */
+.width-80 {
+    width: 85%;
+    margin: auto;
+}
+
+/* Header Style  */
+header {
+    background-color: #6AAFEA;
+    width: 100%;
+    height: 100%;
+}
+
+/* NavBer Style  */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+    align-items: center;
+    max-width: 1150px;
+    margin: auto;
+
+    /* display: none; */
+
+}
+
+.logo h2 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.manu ul {
+    display: flex;
+}
+
+.manu ul li {
+    list-style: none;
+    margin-left: 2rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.manu ul li i {
+    font-size: 1.4rem;
+}
+
+.nav-container-for-mobile {
+    display: none;
+}
+
+.nav-container-for-mobile .logo h2 {
+    font-size: 1.4rem;
+}
+
+.nav-container-for-mobile .manu-icon,
+.buy-icon {
+    font-size: 3rem;
+}
+
+/* Banner Style  */
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8.5% 0;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.banner-containt {
+    width: 50%;
+}
+
+.banner-containt h2 {
+    color: #FFF;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 70px;
+    margin-bottom: 20px;
+}
+
+.banner-containt p {
+    color: #3A3A3A;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.banner-containt .btn {
+    border-radius: 41px;
+    background: #ff5090;
+    color: #FFF;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 15px 20px;
+    border: none;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.banner-containt .btn:hover {
+    background: #FFF;
+    color: #E02C6D;
+}
+
+.banner-image {
+    background-image: url(./images/Circle\ design.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner-image img {
+    width: 100%;
+}
+
+/* Brand Style  */
+.brand {
+    max-width: 1150px;
+    margin: auto;
+}
+
+.brand-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    margin: 100px auto;
+    padding: 30px;
+    align-items: center;
+}
+.brand-images img{
+    cursor: pointer;
+}
+
+/* Popular Collection Style  */
+.popular-collection {}
+
+.collection-container {
+    max-width: 1050px;
+    margin: auto;
+    padding: 0 20px 20px 20px;
+}
+
+.collection-container>h2 {
+    text-align: center;
+    color: #3A3A3A;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 70px;
+    margin-bottom: 30px;
+}
+
+.collection-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.collection-card .card {
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    cursor: pointer;
+}
+
+.collection-card .card img {
+    width: 100%;
+}
+
+.collection-card .card h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.collection-card .card h4 {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.87);
+    margin: .5rem 0;
+}
+
+.collection-card .card>p {
+    width: 85%;
+    font-size: .9rem;
+    margin-top: .6rem;
+    color: #6C6C6C;
+}
+
+.rating {
+    display: flex;
+    margin-top: 7px;
+}
+
+.rating>i {
+    color: #FB8200;
+}
+
+.rating p {
+    margin-top: -4px;
+    margin-left: 10px;
+}
+
+.collection-container .arro {
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    margin-top: 30px;
+    margin-left: 90%;
+    background-color: #FFF;
+    cursor: pointer;
+}
+
+/* Featured products at one place Section Style  */
+.one-place-section {
+    max-width: 1150px;
+    margin: auto;
+    padding: 0 20px 20px 20px;
+}
+
+.one-place-container {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    gap: 60px;
+    align-items: center;
+    margin-top: 50px;
+    /* box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15); */
+}
+
+.container-image img {
+    padding: 20px 20px 15px 20px;
+
+}
+
+.one-place-container .container-contant h2 {
+    color: #0A0826;
+    font-size: 2.1rem;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.one-place-container .container-contant p {
+    color: #6C6C6C;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 28px;
+    width: 80%;
+}
+
+.one-place-container .container-contant .btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #E02C6D;
+    margin: 20px 0;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+/* Footer Style  */
+footer {
+    background-color: #6AAFEA;
+}
+
+.footer {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0;
+    color: #FFF;
+}
+
+.footer h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.footer p{
+    font-size: 1rem;
+}
+.footer-icon i{
+    font-size: 1.5rem;
+    margin: 10px 10px 0 10px ;
+    background-color: #42a7ffee;
+    padding: 7px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/* Media Query For Mobile  */
+@media screen and (max-width:576px) {
+    header {
+        height: 100%;
+        padding-bottom: 30px;
+    }
+
+    .width-80 {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .nav-container {
+        display: none;
+    }
+
+    .nav-container-for-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-container-for-mobile .logo h2 {
+        text-align: center;
+    }
+
+    .banner-container {
+        flex-direction: column-reverse;
+    }
+
+    .banner-containt,
+    .banner-image {
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner-image {
+        background-image: url(./images/Circle\ design.png);
+        margin: 18% 0;
+    }
+
+    .banner-image img {
+        width: 100%;
+    }
+
+    .banner-containt h2 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .brand-images {
+        padding: 25px;
+        gap: 20px;
+    }
+
+    .collection-card {
+        grid-template-columns: 1fr;
+    }
+
+    .collection-container .arro {
+        margin-left: 70%;
+    }
+
+    .one-place-container {
+        grid-template-columns: 1fr;
+    }
+
+    .one-place-container img {
+        width: 100%;
+        padding: 0;
+    }
+
+    .one-place-container .container-contant {
+        text-align: center;
+    }
+
+    .one-place-container .container-contant p {
+        width: 100%;
+    }
+
+    .one-place-section {
+        margin-top: 30px;
+    }
+
+}
+
+/* Media Query For Tablet  */
+
+@media screen and (min-width:576px) and (max-width:920px) {
+    header {
+        height: 100%;
+        padding-bottom: 30px;
+    }
+
+    .width-80 {
+        width: 0 80%;
+    }
+
+    .nav-container {
+        display: none;
+    }
+
+    .nav-container-for-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-container-for-mobile .logo h2 {
+        text-align: center;
+    }
+
+    .banner-container {
+        flex-direction: column-reverse;
+    }
+
+    .banner-containt,
+    .banner-image {
+        width: 100%;
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    .banner-containt h2 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    .banner-image img {
+        width: 80%;
+    }
+
+    .brand-images {
+        padding: 25px;
+        gap: 90px;
+    }
+
+    .collection-card {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .collection-container .arro {
+        margin-left: 85%;
+    }
+
+    .one-place-container {
+        grid-template-columns: 1fr;
+    }
+
+    .one-place-container img {
+        width: 100%;
+        padding: 0;
+    }
+
+    .container-image {
+        margin: auto;
+    }
+
+    .one-place-container .container-contant {
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+
+    .one-place-container .container-contant p {
+        width: 100%;
+    }
+
+    .one-place-section {
+        margin-top: 30px;
+    }
+
 }
